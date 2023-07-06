@@ -1,16 +1,7 @@
 # taskassigned
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Getting Started![355034417_810254797287297_8717033103012838309_n](https://github.com/kghSachin/taks_in/assets/118202383/84df241a-9ca8-4554-b811-cb9426c8b2af)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
