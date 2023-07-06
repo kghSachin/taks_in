@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:taskassigned/widgets/face_recognization.dart';
 import 'package:taskassigned/widgets/finger_print.dart';
+import 'package:taskassigned/constants/string_constants.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -39,7 +40,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       width: 10,
                     ),
                     const Text(
-                      'LOGIN SCREEN',
+                      StringConstants.loginScreenHeader,
                       style: TextStyle(
                         fontSize: 16,
                         fontFamily: 'Poppins',
@@ -84,7 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     children: [
                       TextSpan(
-                        text: 'LOG IN',
+                        text: StringConstants.logIn,
                         style: TextStyle(
                           fontSize: 16,
                           fontFamily: 'Poppins',
@@ -93,7 +94,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       TextSpan(
-                        text: ' to access your ',
+                        text: StringConstants.toAccessYour,
                         style: TextStyle(
                           fontSize: 16,
                           fontFamily: 'Poppins',
@@ -102,7 +103,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       TextSpan(
-                        text: 'PROFILE!',
+                        text: StringConstants.profile,
                         style: TextStyle(
                           fontSize: 16,
                           fontFamily: 'Poppins',
@@ -117,7 +118,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 4,
                 ),
                 const Text(
-                  "Once you have logged in, you will be able to view and edit your profile information.",
+                  StringConstants.onceYouHaveLoggedIn,
                   style: TextStyle(
                     fontSize: 14,
                     fontFamily: 'Poppins',
@@ -129,7 +130,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 16,
                 ),
                 const Text(
-                  "One-Click Login using",
+                  StringConstants.oneClickLoginUsing,
                   style: TextStyle(
                     fontSize: 14,
                     fontFamily: 'Poppins',
@@ -151,7 +152,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 32,
                 ),
                 const Text(
-                  "Login with your phone number",
+                  StringConstants.loginWithYourPhoneNumber,
                   style: TextStyle(
                     fontSize: 14,
                     fontFamily: 'Poppins',
@@ -187,7 +188,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         size: 24,
                       ),
                       border: InputBorder.none,
-                      hintText: 'Phone Number',
+                      hintText: StringConstants.phoneNumberHint,
                       hintStyle: TextStyle(
                         fontSize: 16,
                         fontFamily: 'Nunito',
@@ -210,7 +211,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     minimumSize: const Size(400, 44),
                   ),
                   child: const Text(
-                    "Request OTP",
+                    StringConstants.requestOtp,
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
@@ -222,7 +223,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 16,
                 ),
                 const Text(
-                  "Or, use your social account to login",
+                  StringConstants.copyOrUseYourSocialAcc,
                   style: TextStyle(
                     fontSize: 14,
                     fontFamily: 'Poppins',
@@ -254,7 +255,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         size: 24,
                       ),
                       border: InputBorder.none,
-                      hintText: 'Login with Email ID',
+                      hintText: StringConstants.logInWithYourEmailId,
                       hintStyle: TextStyle(
                         fontSize: 16,
                         fontFamily: 'Nunito',
@@ -316,7 +317,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text("Don’t have an account?",
+                      const Text(StringConstants.dontHaveAnAcc,
                           style: TextStyle(
                             color: Colors.grey,
                             fontSize: 14,
@@ -326,7 +327,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       TextButton(
                         onPressed: () {},
                         child: const Text(
-                          "Sign Up",
+                          StringConstants.signUp,
                           style: TextStyle(color: Colors.orange),
                         ),
                       )
