@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taskassigned/widgets/model_bottomsheet.dart';
 
 class FingerPrint extends StatelessWidget {
   const FingerPrint({super.key});
@@ -20,7 +21,13 @@ class FingerPrint extends StatelessWidget {
         ],
       ),
       child: MaterialButton(
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (context) {
+                return const FingerPrintModelSheet();
+              });
+        },
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

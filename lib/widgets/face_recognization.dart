@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:taskassigned/widgets/facial_bottomSheet.dart';
+import 'package:taskassigned/widgets/model_bottomsheet.dart';
 
 class FaceRecognization extends StatelessWidget {
   const FaceRecognization({super.key});
@@ -20,7 +22,13 @@ class FaceRecognization extends StatelessWidget {
         ],
       ),
       child: MaterialButton(
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(
+              context: context,
+              builder: (context) {
+                return const FacialBottomSheet();
+              });
+        },
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
